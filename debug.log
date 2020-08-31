@@ -1,0 +1,5 @@
+[0827/211141.238:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0827/211146.243:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0827/211151.247:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0827/211156.256:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0828/214417.292:ERROR:media_internals.cc(112)] Cannot get RenderProcessHost

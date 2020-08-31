@@ -30,6 +30,118 @@ def getTimingMultiplier():
     Config.read("config.ini")
     return Config['Additional']['TimingMultiplier']
 
+def getRootDirectory():
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    return Config['Individual']['rootDirectory']
+
+def getRegisterKey():
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    return Config['Individual']['registerKey']
+
+def getWorksheetPush():
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    return Config['Individual']['worksheetPush']
+
+def getWorksheetPull():
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    return Config['Individual']['worksheetPull']
+
+def doWorksheetPush():
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    return Config['Individual']['pushToWorksheet']
+
+def doSetLikelyPassword():
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    return Config['Individual']['setLikelyPassword']
+
+def getLikelyPassword():
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    return Config['Individual']['likelyPassword']
+
+def getUnlikelyPassword():
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    return Config['Individual']['unlikelyPassword']
+
+def setDoSetLikelyPassword(doSetLikelyPassword):
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    Config['Individual']['setLikelyPassword'] = doSetLikelyPassword
+
+    with open('config.ini', 'w+') as configfile:
+        Config.write(configfile)
+        configfile.close()
+
+def setLikelyPassword(likelyPassword):
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    Config['Individual']['likelyPassword'] = likelyPassword
+
+    with open('config.ini', 'w+') as configfile:
+        Config.write(configfile)
+        configfile.close()
+
+def setUnlikelyPassword(unlikelyPassword):
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    Config['Individual']['unlikelyPassword'] = unlikelyPassword
+
+    with open('config.ini', 'w+') as configfile:
+        Config.write(configfile)
+        configfile.close()
+
+def setWorksheetPush(worksheetPush):
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    Config['Individual']['worksheetPush'] = worksheetPush
+
+    with open('config.ini', 'w+') as configfile:
+        Config.write(configfile)
+        configfile.close()
+
+def setWorksheetPull(worksheetPull):
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    Config['Individual']['worksheetPull'] = worksheetPull
+
+    with open('config.ini', 'w+') as configfile:
+        Config.write(configfile)
+        configfile.close()
+
+def setDoWorksheetPush(doWorksheetPush):
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    Config['Individual']['pushToWorksheet'] = doWorksheetPush
+
+    with open('config.ini', 'w+') as configfile:
+        Config.write(configfile)
+        configfile.close()
+
+def setRegisterKey(registerKey):
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    Config['Individual']['registerKey'] = registerKey
+
+    with open('config.ini', 'w+') as configfile:
+        Config.write(configfile)
+        configfile.close()
+
+def setRootDirectory(rootDirectory):
+    Config = configparser.ConfigParser()
+    Config.read("config.ini")
+    Config['Individual']['rootDirectory'] = rootDirectory
+
+    with open('config.ini', 'w+') as configfile:
+        Config.write(configfile)
+        configfile.close()
+
 def setServiceAccount(ServiceKey):
     Config = configparser.ConfigParser()
     Config.read('config.ini')
@@ -37,6 +149,7 @@ def setServiceAccount(ServiceKey):
     
     with open('config.ini', 'w+') as configfile:
         Config.write(configfile)
+        configfile.close()
 
 def setSheetKey(SheetKey):
     Config = configparser.ConfigParser()
@@ -45,6 +158,7 @@ def setSheetKey(SheetKey):
     
     with open('config.ini', 'w+') as configfile:
         Config.write(configfile)
+        configfile.close()
 
 def setSheetName(SheetName):
     Config = configparser.ConfigParser()
@@ -53,6 +167,7 @@ def setSheetName(SheetName):
     
     with open('config.ini', 'w+') as configfile:
         Config.write(configfile)
+        configfile.close()
 
 def setTimingMultiplier(TimingMultiplier):
     Config = configparser.ConfigParser()
@@ -61,8 +176,4 @@ def setTimingMultiplier(TimingMultiplier):
     
     with open('config.ini', 'w+') as configfile:
         Config.write(configfile)
-
-setServiceAccount("Testing")
-setTimingMultiplier("2")
-setSheetKey("test")
-setSheetName("Garrett")
+        configfile.close()

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'settings-basic.ui'
+# Form implementation generated from reading ui file 'settings-done.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.0
 #
@@ -9,16 +9,16 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import config
 
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        MainWindow.setObjectName("Matcha | Version 0.0.0")
+        MainWindow.setObjectName("Matcha | v1.0.0")
         MainWindow.resize(1200, 800)
         MainWindow.setMinimumSize(QtCore.QSize(1190, 780))
         MainWindow.setMaximumSize(QtCore.QSize(1190, 780))
-        MainWindow.setStyleSheet("background: url(C:\\Users\\Garrett Foy\\Documents\\Project Matcha\\Assets\\mockup.png)")
-
+        MainWindow.setStyleSheet("background: url(\\Assets\\mockup.png)")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.background = QtWidgets.QLabel(self.centralwidget)
@@ -27,8 +27,7 @@ class Ui_MainWindow(object):
         self.background.setMaximumSize(QtCore.QSize(1200, 800))
         self.background.setLineWidth(0)
         self.background.setText("")
-        self.background.setWindowIcon(QtGui.QIcon("../Assets/mockup.png"))
-        self.background.setPixmap(QtGui.QPixmap("../Assets/mockup.png"))
+        self.background.setPixmap(QtGui.QPixmap("../Assets/settings.png"))
         self.background.setScaledContents(True)
         self.background.setWordWrap(False)
         self.background.setIndent(0)
@@ -60,6 +59,76 @@ class Ui_MainWindow(object):
         self.exitButton.setFlat(True)
         self.exitButton.setObjectName("exitButton")
         self.exitButton.clicked.connect(MainWindow.close)
+        self.saveButton = QtWidgets.QPushButton(self.centralwidget)
+        self.saveButton.setGeometry(QtCore.QRect(530, 640, 261, 81))
+        self.saveButton.setText("")
+        self.saveButton.setFlat(True)
+        self.saveButton.setObjectName("saveButton")
+        self.saveButton.clicked.connect(self.saveSettings)
+        self.serviceKeyInput = QtWidgets.QPlainTextEdit(self.centralwidget)
+        self.serviceKeyInput.setGeometry(QtCore.QRect(420, 140, 701, 51))
+        font = QtGui.QFont()
+        font.setFamily("Bebas Neue")
+        font.setPointSize(20)
+        font.setBold(False)
+        font.setWeight(50)
+        font.setKerning(True)
+        self.serviceKeyInput.setFont(font)
+        self.serviceKeyInput.setAutoFillBackground(False)
+        self.serviceKeyInput.setStyleSheet("background-color: rgb(17, 17, 19); border: 0px; color: rgb(150,150,150)")
+        self.serviceKeyInput.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.serviceKeyInput.setOverwriteMode(False)
+        self.serviceKeyInput.setBackgroundVisible(False)
+        self.serviceKeyInput.setPlaceholderText("")
+        self.serviceKeyInput.setObjectName("serviceKeyInput")
+        self.sheetKeyInput = QtWidgets.QPlainTextEdit(self.centralwidget)
+        self.sheetKeyInput.setGeometry(QtCore.QRect(420, 258, 701, 41))
+        font = QtGui.QFont()
+        font.setFamily("Bebas Neue")
+        font.setPointSize(20)
+        font.setBold(False)
+        font.setWeight(50)
+        font.setKerning(True)
+        self.sheetKeyInput.setFont(font)
+        self.sheetKeyInput.setAutoFillBackground(False)
+        self.sheetKeyInput.setStyleSheet("background-color: rgb(17, 17, 19); border: 0px; color: rgb(150,150,150)")
+        self.sheetKeyInput.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.sheetKeyInput.setOverwriteMode(False)
+        self.sheetKeyInput.setBackgroundVisible(False)
+        self.sheetKeyInput.setPlaceholderText("")
+        self.sheetKeyInput.setObjectName("sheetKeyInput")
+        self.sheetNameInput = QtWidgets.QPlainTextEdit(self.centralwidget)
+        self.sheetNameInput.setGeometry(QtCore.QRect(420, 375, 701, 41))
+        font = QtGui.QFont()
+        font.setFamily("Bebas Neue")
+        font.setPointSize(20)
+        font.setBold(False)
+        font.setWeight(50)
+        font.setKerning(True)
+        self.sheetNameInput.setFont(font)
+        self.sheetNameInput.setAutoFillBackground(False)
+        self.sheetNameInput.setStyleSheet("background-color: rgb(17, 17, 19); border: 0px; color: rgb(150,150,150)")
+        self.sheetNameInput.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.sheetNameInput.setOverwriteMode(False)
+        self.sheetNameInput.setBackgroundVisible(False)
+        self.sheetNameInput.setPlaceholderText("")
+        self.sheetNameInput.setObjectName("sheetNameInput")
+        self.speedInput = QtWidgets.QPlainTextEdit(self.centralwidget)
+        self.speedInput.setGeometry(QtCore.QRect(420, 495, 701, 41))
+        font = QtGui.QFont()
+        font.setFamily("Bebas Neue")
+        font.setPointSize(20)
+        font.setBold(False)
+        font.setWeight(50)
+        font.setKerning(True)
+        self.speedInput.setFont(font)
+        self.speedInput.setAutoFillBackground(False)
+        self.speedInput.setStyleSheet("background-color: rgb(17, 17, 19); border: 0px; color: rgb(150,150,150)")
+        self.speedInput.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.speedInput.setOverwriteMode(False)
+        self.speedInput.setBackgroundVisible(False)
+        self.speedInput.setPlaceholderText("")
+        self.speedInput.setObjectName("speedInput")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -67,7 +136,22 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("Matcha | Version: 0.0.0", "Matcha | Version 0.0.0"))
+        MainWindow.setWindowTitle(_translate("Matcha | v1.0.0", "Matcha | v1.0.0"))
+        self.serviceKeyInput.setPlainText(_translate("MainWindow", config.getServiceAccount()))
+        self.sheetKeyInput.setPlainText(_translate("MainWindow", config.getSheetKey()))
+        self.sheetNameInput.setPlainText(_translate("MainWindow", config.getSheetName()))
+        self.speedInput.setPlainText(_translate("MainWindow", config.getTimingMultiplier()))
+
+    def saveSettings(self):
+        config.setServiceAccount(self.serviceKeyInput.toPlainText())
+        config.setSheetKey(self.sheetKeyInput.toPlainText())
+        config.setSheetName(self.sheetNameInput.toPlainText())
+        config.setTimingMultiplier(self.speedInput.toPlainText())
+
+        msg = QtWidgets.QMessageBox()
+        msg.setWindowTitle("v1.0.0")
+        msg.setText("Settings have been saved!")
+        msg.exec_()
 
 
 

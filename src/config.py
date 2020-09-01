@@ -71,6 +71,9 @@ def getUnlikelyPassword():
     return Config['Individual']['unlikelyPassword']
 
 def setDoSetLikelyPassword(doSetLikelyPassword):
+    if(doSetLikelyPassword == ""):
+        return
+
     Config = configparser.ConfigParser()
     Config.read("config.ini")
     Config['Individual']['setLikelyPassword'] = doSetLikelyPassword
@@ -80,6 +83,8 @@ def setDoSetLikelyPassword(doSetLikelyPassword):
         configfile.close()
 
 def setLikelyPassword(likelyPassword):
+    if(likelyPassword == ""):
+        return
     Config = configparser.ConfigParser()
     Config.read("config.ini")
     Config['Individual']['likelyPassword'] = likelyPassword
@@ -89,6 +94,8 @@ def setLikelyPassword(likelyPassword):
         configfile.close()
 
 def setUnlikelyPassword(unlikelyPassword):
+    if(unlikelyPassword == ""):
+        return
     Config = configparser.ConfigParser()
     Config.read("config.ini")
     Config['Individual']['unlikelyPassword'] = unlikelyPassword
@@ -98,6 +105,8 @@ def setUnlikelyPassword(unlikelyPassword):
         configfile.close()
 
 def setWorksheetPush(worksheetPush):
+    if(worksheetPush == ""):
+        return
     Config = configparser.ConfigParser()
     Config.read("config.ini")
     Config['Individual']['worksheetPush'] = worksheetPush
@@ -107,6 +116,8 @@ def setWorksheetPush(worksheetPush):
         configfile.close()
 
 def setWorksheetPull(worksheetPull):
+    if(worksheetPull == ""):
+        return
     Config = configparser.ConfigParser()
     Config.read("config.ini")
     Config['Individual']['worksheetPull'] = worksheetPull
@@ -116,6 +127,8 @@ def setWorksheetPull(worksheetPull):
         configfile.close()
 
 def setDoWorksheetPush(doWorksheetPush):
+    if(doWorksheetPush == ""):
+        return
     Config = configparser.ConfigParser()
     Config.read("config.ini")
     Config['Individual']['pushToWorksheet'] = doWorksheetPush
@@ -125,6 +138,8 @@ def setDoWorksheetPush(doWorksheetPush):
         configfile.close()
 
 def setRegisterKey(registerKey):
+    if(registerKey == ""):
+        return
     Config = configparser.ConfigParser()
     Config.read("config.ini")
     Config['Individual']['registerKey'] = registerKey
@@ -134,6 +149,8 @@ def setRegisterKey(registerKey):
         configfile.close()
 
 def setRootDirectory(rootDirectory):
+    if(rootDirectory == ""):
+        return
     Config = configparser.ConfigParser()
     Config.read("config.ini")
     Config['Individual']['rootDirectory'] = rootDirectory
@@ -143,6 +160,8 @@ def setRootDirectory(rootDirectory):
         configfile.close()
 
 def setServiceAccount(ServiceKey):
+    if(ServiceKey == ""):
+        return
     Config = configparser.ConfigParser()
     Config.read('config.ini')
     Config['Individual']['ServiceKey'] = ServiceKey
@@ -152,6 +171,8 @@ def setServiceAccount(ServiceKey):
         configfile.close()
 
 def setSheetKey(SheetKey):
+    if(SheetKey == ""):
+        return
     Config = configparser.ConfigParser()
     Config.read('config.ini')
     Config['Individual']['SheetKey'] = SheetKey
@@ -161,6 +182,8 @@ def setSheetKey(SheetKey):
         configfile.close()
 
 def setSheetName(SheetName):
+    if(SheetName == ""):
+        return
     Config = configparser.ConfigParser()
     Config.read('config.ini')
     Config['Individual']['SheetName'] = SheetName
@@ -170,6 +193,8 @@ def setSheetName(SheetName):
         configfile.close()
 
 def setTimingMultiplier(TimingMultiplier):
+    if(TimingMultiplier == ""):
+        return
     Config = configparser.ConfigParser()
     Config.read('config.ini')
     Config['Additional']['TimingMultiplier'] = TimingMultiplier

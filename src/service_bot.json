@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hotspot-automation",
+  "private_key_id": "555a48f22abc136f44b586b9fc7e04d45463d4fd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDZP7PKdamHfUgu\n0YOtlPl0cH46fYwbk5ygj6aHR37QkKWyhuY4MhtbaHIeSAYXSh4MGF8u8fe8JE3J\nFNbv0eK4hvnqTuwAV+8FMiO3/++9qQlA2A7m3/Lg1hGMI1HCWFgKlSvTpkwXk5Q0\n1wbHIJVXPt977tmg0K1RlT3YGUkX4doZTBRufcKRSn2GocL3bRT+YpCHRZNFlJ1B\nHNpdWUlvVncu+5n5rJkgXevdSedo9NwV9IRA7X3sLF6Ww1pfaOK1yc9OPmQ231cf\nXWQ+ZdApeW1SIVsxTQ5vBaWnxMkZZRTwUVYH+o98c+Y1Kg2AFN1g4OGaPr14fb4h\nSEon/5TfAgMBAAECggEAAohXlDii7U1slf8jRdbCwbS+A/iKtZeW79g83L7cn5nQ\nFLC15lnPL9Wb3vZ/+62FhCaUlXuEo9DYh0uS5eDQf84zA6Q/5BEiXDElcXOuW8uo\nq/TY16AsuKpGMhgHT/ivrg/nHuSFZpD13VfUYGXk18uH124FY3aLTrQqsGY7D+gw\nnaGo6bmx9SFNIYAEl28ZJdyxwtZdZr0vStbSqKxIVWBXg4FE5anITy6IUju+lhjs\nqZYvhAnjxgHQN+t3Xqp3RMbej2tF1dGY9pZdiaQ3I3oX32bpuZEoIxAvEb6+ZM/f\nMcs0oMFg+eOeigArIQlYt+Z8Tr5xlHctlO+0G7tpAQKBgQD2z5GgjIr6JDanExrL\nqnCx5UFB0RQu5NgvfPRrxNCCLIqnAPiqGgkC1dbWIt4j0Pm9i4GPiAqLW+Iwcjuz\nsiryua6jeSsW2ZBEjXD+SEB1oFk/t7fqV1fdMPrIG+MQuMPclEEa2dbGsm3bctIZ\nVzIXpJrTMOoRmDV5yM+6knxZ/wKBgQDhVl51bc6zX+w2A+VtbpkCRhVe884g/gbO\nQsdtbKib0KSlV0yFAZbdATLPxnY2PlgEO8GqQnfJDGhDAcmQhGrcIkJDMPFfw1zi\nQbrDx/ziAq54KORfRDejGGf5C/HB6JUnt72pGVzWcAXmByH2b8Nbbs1bvNlBBDd/\nR/TcK8oFIQKBgQD0J+KoMGBLlAd8wCmB0NorId+sfGi6+yfh0nr5IXojTGzdSNi1\nbYv8gg5FR7j5NYHZQGiq1KmZswvPYTIuUdKqy4U3smYt9IwDROjCpDcgJcAkiFoo\nOL9y0UFFNFEr+ZvIWeEN7vHJHjoPHUc6SkgDm5KN2ZW0Uh6Um1Lj/oWFgQKBgCjq\ngeRYt/uiI0X7lyEzv9zF1QOUyYz8E0hIn+WioUsJq5vKKj7MdxRSL2PC6ZwX3euG\n3jeIMi/zbMsd+/ed07l9DwMcU/fLhYYf4UXDfoubaQqwgic6P9ABkn+KR6+qB8ta\ndbnKvSzC0o9eJDCXQqXLjMZnmBtSJLGb4z5HRTuBAoGBAIEMlxZMpthMRGd8Cq8E\nRSv5aPQNvzZfvO+5tN79OgEMw48v+nvcU8XGFFI0ZaODK7eD4ooRr31vGtBLC4E2\ncheuTrR9VLoxGk5FoJ4sJ4+tEHYXwSV6INgBzwxIjCcyXSsvzgNCfDWXnGjvaS+G\nAsd0MktdUQxwPnVsM6H6AgrN\n-----END PRIVATE KEY-----\n",
+  "client_email": "hotspotbot@hotspot-automation.iam.gserviceaccount.com",
+  "client_id": "115448850474275282431",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hotspotbot%40hotspot-automation.iam.gserviceaccount.com"
+}

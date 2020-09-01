@@ -67,7 +67,7 @@ class Ui_registration(object):
 
     def retranslateUi(self, registration):
         _translate = QtCore.QCoreApplication.translate
-        registration.setWindowTitle(_translate("registration", "MainWindow"))
+        registration.setWindowTitle(_translate("registration", "Matcha | Version: 1.0.o"))
 
     def registerButtonClick(self):
         registration.close()
